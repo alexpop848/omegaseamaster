@@ -1,0 +1,402 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h3 {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: rgb(31, 30, 30);
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+h4 {
+  color: rgb(31, 30, 30);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+li,
+p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-left: 5rem;
+}
+
+#logo {
+  max-height: 12vh;
+  width: auto;
+}
+
+.nav-container {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 0 2rem;
+  min-height: 12vh;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 500px;
+}
+
+.order {
+  background: rgb(248, 46, 28);
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.part1 {
+  background: radial-gradient(#525252, #131313);
+  padding-bottom: 30px;
+}
+
+#intro {
+  display: grid;
+  min-height: 90vh;
+  grid-template-columns: 25% repeat(1, minmax(5rem, 1fr)) 25%;
+  grid-template-rows: 1fr 2fr;
+  padding-bottom: 5rem;
+}
+
+#intro h3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: flex-end;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+#intro img {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  height: 110%;
+  object-fit: cover;
+  justify-self: center;
+  min-height: auto;
+}
+
+#part2 {
+  background: linear-gradient(#acabab, #000000);
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.info p {
+  letter-spacing: 1px;
+  line-height: 3.5rem;
+  color: white;
+}
+
+.final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+}
+
+.right_side {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.right_side h2 {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.right_side ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+.right_side li {
+  list-style: none;
+  width: 20%;
+}
+
+.right_side img {
+  width: 100%;
+  height: auto;
+}
+
+.right_side img:hover {
+  transform: scale(2);
+  background-color: rgb(243, 243, 243);
+  border-radius: 50%;
+}
+
+.left_side {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  border-right: 6px solid rgb(221, 220, 220);
+  border-radius: 2%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.left_side h3 {
+  color: rgb(31, 30, 30);
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.movement {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+  margin: 0;
+}
+
+.movement img {
+  width: 80%;
+  height: auto;
+}
+
+.txt {
+  width: 50%;
+  height: auto;
+  float: right;
+  text-align: end;
+}
+
+.movepic {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+.vectors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 3rem;
+  text-align: right;
+}
+
+.vectors img {
+  width: 10%;
+  height: auto;
+}
+
+.vectors h4 {
+  padding-left: 4rem;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 3rem;
+  justify-content: flex-start;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.arrow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+footer {
+  background-color: black;
+  min-height: 14vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+#email {
+  width: 60%;
+  font-size: 1.5rem;
+  height: 3rem;
+  border-radius: 5%;
+}
+
+label {
+  width: 20rem;
+  font-size: 1.5rem;
+}
+
+.submit {
+  font-size: 1.5rem;
+  width: 8rem;
+  height: 3rem;
+  background: rgb(255, 24, 24);
+  border-radius: 10%;
+  font-weight: lighter;
+  color: white;
+}
+
+.middlelogo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#505050, #ffffff);
+}
+
+.middlelogo img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-bottom: 6rem;
+  line-height: 3.5rem;
+}
+
+.specs ul::before {
+  list-style: square;
+}
+
+.specs h3 {
+  color: black;
+  font-size: 2rem;
+}
+
+#bottom {
+  width: 100%;
+  height: 12vh;
+  text-align: center;
+}
+
+#bottom h3 {
+  padding-left: 25rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0.3;
+  font-style: oblique;
+}
+
+#bottom a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .specs {
+    font-size: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .specs h3 {
+    flex: 1;
+    overflow: hidden;
+    padding-left: 0px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .final {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .left_side {
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  .right_side {
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  .movepic {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
